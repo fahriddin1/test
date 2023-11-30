@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Robot:300,400,500,700,900&display=swap');
+.tests{
+    padding-top: 10px;
+    height: 500px;
+    margin-top: 100px;
+    -webkit-box-shadow: 0px 1px 11px 6px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 1px 11px 6px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 1px 11px 6px rgba(34, 60, 80, 0.2);
+}
+
+.tests_1{
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    display: flex;
+}
+
+.test__name{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+}
+.test__name h2{     
+    text-transform: capitalize;
+}
+
+.test_1{
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+  
+}
+
+.test_1 p{
+      border-bottom: 1px solid grey;
+}
+
+.test_1 span{
+    color: blue;
+}
+
+.test_1 input{
+   width: 50px;
+   color: red;
+}
+
+.test_1 input:hover{
+    border-color: blue;
+    border: 5px;
+}
+
+
+.botton{
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    padding: 10px 50px;
+    width: 200px;
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.botom{
+    margin: 50px auto;
+}
+
+.botton:hover {
+    transition: 0.4s;
+    background-color: rgba(0, 0, 255, 0.396);
+}
+
+.botoom__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.red{
+    color: red;
+}
+
+.blue{
+    color: blue;
+}
+
+
+
+
+
+
+@media (max-width:1145px){
+    .container {
+        max-width: 1000px;
+        .tests_1{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media (max-width:1010px){
+    .container {
+        max-width: 800px;
+    }
+}
+
+@media (max-width:815px){
+    .container {
+        max-width: 500px;
+    }
+    .test_1 input{
+        width: 30px;
+    }
+
+    .test_1 span{
+        font-size: 20px;
+        margin-top: 5px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .tests{
+        height: 550px;
+    }
+}
+
+
+
+@media (max-width:515px){
+    .container {
+        max-width: 400px;
+    }
+}
+
+@media (max-width:420px){
+
+    .registration{
+        font-size: 40px;
+    }
+
+    .tests{
+        height: 610px;
+    }
+
+    .botoom__btn{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .btm{
+        margin-top: 10px;
+    }
+
+    .test_1 input{
+        width: 50px;
+     }
+     .test_1 span{
+        margin-top: 15px;
+     }
+}
+
+@media (max-width:360px){
+    .tests{
+        height: 670px;
+    }
+}
