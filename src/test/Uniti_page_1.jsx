@@ -34,7 +34,7 @@ const Uniti_page_1 = () => {
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, enim.</p>
                 </div>
             </div>
-            <a className='botton botom' href="Uniti_page_2">kegingisi</a>
+            <a className='botton botom' href="/Uniti_page_2">kegingisi</a>
         </div>
       </div>
     </React.Fragment>

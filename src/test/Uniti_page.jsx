@@ -17,7 +17,7 @@ const Uniti_page_1 = () => {
                             <input type="tel" name="" id="" />
                         </div>
 
-                        <a className='btn' href="Uniti_page_1">
+                        <a className='btn' href="/Uniti_page_1">
                             o'tish
                         </a>
                     </div>

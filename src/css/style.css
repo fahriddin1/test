@@ -8,7 +8,7 @@
 .container {
     max-width: 1140px;
     margin: 0 auto;
-    /* background-color: rgb(237, 237, 237); */
+    /* background-color:   #009688;  */
 }
 
 .uniti__box {
@@ -30,7 +30,7 @@
 }
 
 .registration__span__2 {
-    color: blue;
+    color: black;
 }
 
 .registration__span__1 {

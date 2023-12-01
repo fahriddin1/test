@@ -34,8 +34,8 @@ const Uniti_page_4 = () => {
                         </div>
                     </div>
                     <div className="botoom__btn">
-                        <a className='botton' href="Uniti_page_2">orqaga</a>
-                        <a className='botton btm' href="Uniti_page_5">kegingisi</a>
+                        <a className='botton' href="/Uniti_page_2">orqaga</a>
+                        <a className='botton btm' href="/Uniti_page_5">kegingisi</a>
                     </div>
                 </div>
             </div>
