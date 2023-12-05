@@ -18,8 +18,8 @@ function App() {
 
   return (
     <React.Fragment>
-      <Routes>
-        <Route path='/' element={<Uniti_page/>}/>
+      <Routes> 
+        <Route path='/' element={<Uniti_page/>}/> 
         <Route path='Uniti_page_1' element={<Uniti_page_1/>}/>
         <Route path='Uniti_page_2' element={<Uniti_page_2/>}/>
         <Route path='Uniti_page_3' element={<Uniti_page_3/>}/>

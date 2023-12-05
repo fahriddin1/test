@@ -1,11 +1,48 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import "../css/style1.css"
 
 const Uniti_page_1 = () => {
 
-  return (
-    <React.Fragment>
-      <div className="container containers">
+  const [load, setLoad] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoad(false);
+    }, 3000);
+  });
+    return (
+         <React.Fragment>
+            {load ? (
+         <div class="loader">
+         <div class="box box0">
+           <div></div>
+         </div>
+         <div class="box box1">
+           <div></div>
+         </div>
+         <div class="box box2">
+           <div></div>
+         </div>
+         <div class="box box3">
+           <div></div>
+         </div>
+         <div class="box box4">
+           <div></div>
+         </div>
+         <div class="box box5">
+           <div></div>
+         </div>
+         <div class="box box6">
+           <div></div>
+         </div>
+         <div class="box box7">
+           <div></div>
+         </div>
+         <div class="ground">
+           <div></div>
+         </div>
+       </div>
+      ) : (
+        <div className="container containers">
         <div className="tests">
             <div className="test__name">
                 <h2>diqat<samp className='red'>t</samp> <span className='blue'>savol<span className='red'>!</span></span> (1)</h2>
@@ -37,6 +74,8 @@ const Uniti_page_1 = () => {
             <a className='botton botom' href="/Uniti_page_2">kegingisi</a>
         </div>
       </div>
+      )}
+     
     </React.Fragment>
   )
 }
