@@ -104,20 +104,15 @@ const Uniti_page_4 = () => {
                         <a className='botton' href="/Uniti_page_2">orqaga</a>
                         <a className='botton btm' href="/Uniti_page_5">kegingisi</a>
                     </div> */}
-                    <button  type="button" class="buttonq">
-                              {/* <a href="/Uniti_page_3" className='button-top'>orqaga</a> */}
-                              <NavLink to={"Uniti_page_3"} className='button-top'  >orqaga</NavLink>
-                              <div  class="button-bottom"></div>
-                              <div  class="button-base"></div>
-                        </button> 
+                    
                       {/* <<<<<<<<<1>>>>>>>>> */}
-                         <button  type="button" class="buttone">
-                              {/* <a href="/Uniti_page_5" className='button-top'>kengisi</a> */}
-                              <NavLink to={"Uniti_page_5"} className='button-top'  >kengisi</NavLink>
-                              <div  class="button-bottom"></div>
-                              <div  class="button-base"></div>
-                        </button>  
-                       
+                        
+                      <button  type="button" class="button">
+                  {/* <a href="/Uniti_page_2" className='button-top'>kegngisi</a> */}
+                  <NavLink to={"Uniti_page_5"} className='button-top'  >kengisi</NavLink>
+              <div  class="button-bottom"></div>
+              <div  class="button-base"></div>
+                </button> 
 
                 </div>
             </div>

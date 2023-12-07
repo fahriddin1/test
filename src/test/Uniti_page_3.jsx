@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom'
 
 const Uniti_page_3 = () => {
 
-  let [index, setIndex] = useState(0)
+  let [index, setIndex] = useState(2)
   let [question, setQuestion] = useState(data[index]); 
   let [lock, setLock] =useState(false);
 
@@ -104,19 +104,13 @@ const Uniti_page_3 = () => {
                     </div>
         
 
-<button  type="button" class="buttonq">
-                              {/* <a href="/Uniti_page_2" className='button-top'>orqaga</a> */}
-                              <NavLink to={"Uniti_page_2"} className='button-top'  >orqaga</NavLink>
-                              <div  class="button-bottom"></div>
-                              <div  class="button-base"></div>
-                        </button> 
+
                       {/* <<<<<<<<<1>>>>>>>>> */}
-                         <button  type="button" class="buttone">
-                              {/* <a href="/Uniti_page_4" className='button-top'>kengisi</a> */}
-                              <NavLink to={"Uniti_page_4"} className='button-top'  >kengisi</NavLink>
-                              <div  class="button-bottom"></div>
-                              <div  class="button-base"></div>
-                        </button>  
+                      <button  type="button" class="button">
+                  <NavLink to={"Uniti_page_4"} className='button-top'>kengisi</NavLink>
+              <div  class="button-bottom"></div>
+              <div  class="button-base"></div>
+                </button>  
                       
 
                 </div>
