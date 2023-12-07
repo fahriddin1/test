@@ -74,7 +74,7 @@ const Uniti_page_1 = () => {
     {/* <a className='submit' href="Uniti_page_1">
      Submit
     </a> */}
-    <NavLink to={"/submit"} className='submit'  href="Uniti_page_1">submit</NavLink>
+    <NavLink to={"Uniti_page_1"} className='submit'  >submit</NavLink>
     <p class="signin">Already have an acount ? <a href="#">Signin</a> </p>
 </form>
       )}
