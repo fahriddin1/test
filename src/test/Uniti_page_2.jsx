@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import "../css/style1.css"
 import { data } from '../data'
 import { useRef } from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Uniti_page_2 = () => {
    
@@ -103,13 +104,15 @@ const Uniti_page_2 = () => {
                     </div>
                     <div className="botoom__btn">
                         <button  type="button" class="buttons">
-                              <a href="/Uniti_page_1" className='button-top'>orqaga</a>
+                              {/* <a href="/Uniti_page_1" className='button-top'>orqaga</a> */}
+                              <NavLink to={"Uniti_page_1"} className='button-top'  >orqaga</NavLink>
                               <div  class="button-bottom"></div>
                               <div  class="button-base"></div>
                         </button> 
                       {/* <<<<<<<<<1>>>>>>>>> */}
                          <button  type="button" class="buttonsg">
-                              <a href="/Uniti_page_3" className='button-top'>kengisi</a>
+                              {/* <a href="/Uniti_page_3" className='button-top'>kengisi</a> */}
+                              <NavLink to={"Uniti_page_3"} className='button-top'>kengisi</NavLink>
                               <div  class="button-bottom"></div>
                               <div  class="button-base"></div>
                         </button>  

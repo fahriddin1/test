@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import "../css/style1.css"
 import { data } from '../data'
 import { useRef } from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Uniti_page_1 = () => {
 
@@ -98,8 +99,9 @@ const Uniti_page_1 = () => {
                     <p ref={Option4} onClick={(e)=>{checkAns(e,4)}}>{question.option4}</p>
                 </div>
             </div>
-                <button href="/Uniti_page_2"  type="button" class="button">
-                  <a href="/Uniti_page_2" className='button-top'>kegngisi</a>
+                <button  type="button" class="button">
+                  {/* <a href="/Uniti_page_2" className='button-top'>kegngisi</a> */}
+                  <NavLink to={"Uniti_page_2"} className='button-top'  >kengisi</NavLink>
               <div  class="button-bottom"></div>
               <div  class="button-base"></div>
                 </button> 
