@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 // import { useNavigate } from 'react-router-dom'
 import "../css/style.css"
+import { NavLink } from 'react-router-dom'
 
 const Uniti_page_1 = () => {
     const [load, setLoad] = useState(true);
@@ -70,9 +71,10 @@ const Uniti_page_1 = () => {
         <input required="" placeholder="" type="password" class="input"/>
         <span>Confirm password</span>
     </label>
-    <a className='submit' href="Uniti_page_1">
+    {/* <a className='submit' href="Uniti_page_1">
      Submit
-    </a>
+    </a> */}
+    <NavLink to={"/submit"} className='submit'  href="Uniti_page_1">submit</NavLink>
     <p class="signin">Already have an acount ? <a href="#">Signin</a> </p>
 </form>
       )}

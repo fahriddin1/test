@@ -1,7 +1,38 @@
 import React, { useState, useEffect } from 'react'
 import "../css/style1.css"
+import { data } from '../data'
+import { useRef } from 'react'
 
 const Uniti_page_2 = () => {
+   
+  let [index, setIndex] = useState(0)
+  let [question, setQuestion] = useState(data[index]); 
+  let [lock, setLock] =useState(false);
+
+  let Option1 =  useRef(null);
+  let Option2 =  useRef(null);
+  let Option3 =  useRef(null);
+  let Option4 =  useRef(null);
+
+  let option_array = [Option1,Option2,Option3,Option4 ];
+
+  const checkAns = (e,ans) => {
+          if (lock === false) {
+            if (question.ans===ans) {
+              e.target.classList.add("correct");
+              setLock(true);
+          }
+          else {
+            e.target.classList.add("wrong");
+            setLock(true);
+            option_array[question.ans-1].current.classList.add("correct")
+          }
+          }
+
+       
+  }
+
+
     const [load, setLoad] = useState(true);
   useEffect(() => {
     setTimeout(() => {
@@ -44,35 +75,45 @@ const Uniti_page_2 = () => {
             <div className="container containers">
                 <div className="tests">
                     <div className="test__name">
-                        <h2>diqat<samp className='red'>t</samp> <span className='blue'>savol<span className='red'>!</span></span> (2)</h2>
+                        <h2>{index+1}.{question.question}</h2>
                     </div>
                     <div className="tests_1">
                         <div className="test_1">
                             <input type="radio" name="go" id="" />
                             <span>(A)</span>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, enim.</p>
+                            <p ref={Option1} onClick={(e)=>{checkAns(e,1)}}>{question.option1}</p>
                         </div>
                         <div className="test_1">
                             <input type="radio" name="go" id="" />
                             <span>(D)</span>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, enim.</p>
+                            <p ref={Option2} onClick={(e)=>{checkAns(e,2)}}>{question.option2}</p>
                         </div>
                     </div>
                     <div className="tests_1">
                         <div className="test_1">
                             <input type="radio" name="go" id="" />
                             <span>(B)</span>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, enim.</p>
+                            <p  ref={Option2} onClick={(e)=>{checkAns(e,3)}}>{question.option3}</p>
                         </div>
                         <div className="test_1">
                             <input type="radio" name="go" id="" />
                             <span>(C)</span>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, enim.</p>
+                            <p  ref={Option2} onClick={(e)=>{checkAns(e,4)}}>{question.option4}</p>
                         </div>
                     </div>
                     <div className="botoom__btn">
-                        <a className='botton' href="/Uniti_page_1">orqaga</a>
-                        <a className='botton btm' href="/Uniti_page_3">kegingisi</a>
+                        <button  type="button" class="buttons">
+                              <a href="/Uniti_page_1" className='button-top'>orqaga</a>
+                              <div  class="button-bottom"></div>
+                              <div  class="button-base"></div>
+                        </button> 
+                      {/* <<<<<<<<<1>>>>>>>>> */}
+                         <button  type="button" class="buttonsg">
+                              <a href="/Uniti_page_3" className='button-top'>kengisi</a>
+                              <div  class="button-bottom"></div>
+                              <div  class="button-base"></div>
+                        </button>  
+                      
                     </div>
                 </div>
             </div>
