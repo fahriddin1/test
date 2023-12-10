@@ -101,8 +101,6 @@ const Uniti_page_10 = () => {
                             <p ref={Option4} onClick={(e)=>{checkAns(e,1)}}>{question.option4}</p>
                         </div>
                     </div>
-                  
-
                         
                 </div>
             </div>

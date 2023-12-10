@@ -48,34 +48,33 @@ const Uniti_page_1 = () => {
     <p class="message">Signup now and get full access to our app. </p>
         <div class="flex">
         <label>
-            <input required="" placeholder="" type="text" class="input"/>
+            <input required="" placeholder="" type="text" className="input"/>
             <span>Firstname</span>
         </label>
 
         <label>
-            <input required="" placeholder="" type="text" class="input"/>
+            <input required="" placeholder="" type="text" className="input"/>
             <span>Lastname</span>
         </label>
     </div>  
             
     <label>
-        <input required="" placeholder="" type="email" class="input"/>
+        <input required="" placeholder="" type="email" className="input"/>
         <span>Email</span>
     </label> 
         
     <label>
-        <input required="" placeholder="" type="password" class="input"/>
+        <input required="" placeholder="" type="password" className="input"/>
         <span>Password</span>
     </label>
     <label>
-        <input required="" placeholder="" type="password" class="input"/>
+        <input required="" placeholder="" type="password" className="input"/>
         <span>Confirm password</span>
     </label>
     {/* <a className='submit' href="Uniti_page_1">
      Submit
     </a> */}
     <NavLink to={"Uniti_page_1"} className='submit'  >submit</NavLink>
-    <p class="signin">Already have an acount ? <a href="#">Signin</a> </p>
 </form>
       )}
             {/* <div className="container">

@@ -85,29 +85,27 @@ const Uniti_page_8 = () => {
                         <div className="test_1">
                             <input type="radio" name="go" id="" />
                             <span>(D)</span>
-                            <p ref={Option2} onClick={(e)=>{checkAns(e,1)}}>{question.option2}</p>
+                            <p ref={Option2} onClick={(e)=>{checkAns(e,2)}}>{question.option2}</p>
                         </div>
                     </div>
                     <div className="tests_1">
                         <div className="test_1">
                             <input type="radio" name="go" id="" />
                             <span>(B)</span>
-                            <p ref={Option3} onClick={(e)=>{checkAns(e,1)}}>{question.option3}</p>
+                            <p ref={Option3} onClick={(e)=>{checkAns(e,3)}}>{question.option3}</p>
                         </div>
                         <div className="test_1">
                             <input type="radio" name="go" id="" />
                             <span>(C)</span>
-                            <p ref={Option4} onClick={(e)=>{checkAns(e,1)}}>{question.option4}</p>
+                            <p ref={Option4} onClick={(e)=>{checkAns(e,4)}}>{question.option4}</p>
                         </div>
                     </div>
-                      {/* <<<<<<<<<1>>>>>>>>> */}
-                      <button  type="button" class="button">
-                  {/* <a href="/Uniti_page_2" className='button-top'>kegngisi</a> */}
-                  <NavLink to={"Uniti_page_9"} className='button-top'  >kengisi</NavLink>
-              <div  class="button-bottom"></div>
-              <div  class="button-base"></div>
-                </button> 
-                     
+                    
+                    <ul>
+                      <li>
+                        <NavLink to={"/Uniti_page_9"} className='submit'  >submit</NavLink>
+                      </li>
+                  </ul>
                 </div>
             </div>
          )}

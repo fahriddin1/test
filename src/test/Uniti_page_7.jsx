@@ -101,13 +101,12 @@ const Uniti_page_7 = () => {
                             <p ref={Option4} onClick={(e)=>{checkAns(e,4)}}>{question.option4}</p>
                         </div>
                     </div>
-                      {/* <<<<<<<<<1>>>>>>>>> */}
-                      <button  type="button" class="button">
-                  {/* <a href="/Uniti_page_2" className='button-top'>kegngisi</a> */}
-                  <NavLink to={"Uniti_page_8"} className='button-top'  >kengisi</NavLink>
-              <div  class="button-bottom"></div>
-              <div  class="button-base"></div>
-                </button> 
+                    <ul>
+                      <li>
+                        <NavLink to={"/Uniti_page_8"} className='submit'  >submit</NavLink>
+                      </li>
+                  </ul>
+                      
                       
                 </div>
             </div>

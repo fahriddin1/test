@@ -94,25 +94,19 @@ const Uniti_page_2 = () => {
                         <div className="test_1">
                             <input type="radio" name="go" id="" />
                             <span>(B)</span>
-                            <p  ref={Option2} onClick={(e)=>{checkAns(e,3)}}>{question.option3}</p>
+                            <p  ref={Option3} onClick={(e)=>{checkAns(e,3)}}>{question.option3}</p>
                         </div>
                         <div className="test_1">
                             <input type="radio" name="go" id="" />
                             <span>(C)</span>
-                            <p  ref={Option2} onClick={(e)=>{checkAns(e,4)}}>{question.option4}</p>
+                            <p  ref={Option4} onClick={(e)=>{checkAns(e,4)}}>{question.option4}</p>
                         </div>
                     </div>
-                    <div className="botoom__btn">
-
-                      {/* <<<<<<<<<1>>>>>>>>> */}
-                      <button  type="button" class="button">
-                  {/* <a href="/Uniti_page_3" className='button-top'>kegngisi</a> */}
-                  <NavLink to={"Uniti_page_3"} className='button-top'  >kengisi</NavLink>
-              <div  class="button-bottom"></div>
-              <div  class="button-base"></div>
-                </button>  
-                      
-                    </div>
+                    <ul>
+                      <li>
+                        <NavLink to={"/Uniti_page_3"} className='submit'  >submit</NavLink>
+                      </li>
+                  </ul>
                 </div>
             </div>
       )}
