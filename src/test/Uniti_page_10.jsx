@@ -79,29 +79,25 @@ const Uniti_page_10 = () => {
                     </div>
                     <div className="tests_1">
                         <div className="test_1">
-                            <input type="radio" name="go" id="" />
-                            <span>(A)</span>
                             <p ref={Option1} onClick={(e)=>{checkAns(e,1)}}>{question.option1}</p>
                         </div>
                         <div className="test_1">
-                            <input type="radio" name="go" id="" />
-                            <span>(D)</span>
                             <p ref={Option2} onClick={(e)=>{checkAns(e,1)}}>{question.option2}</p>
                         </div>
                     </div>
                     <div className="tests_1">
                         <div className="test_1">
-                            <input type="radio" name="go" id="" />
-                            <span>(B)</span>
                             <p ref={Option3} onClick={(e)=>{checkAns(e,1)}}>{question.option3}</p>
                         </div>
                         <div className="test_1">
-                            <input type="radio" name="go" id="" />
-                            <span>(C)</span>
                             <p ref={Option4} onClick={(e)=>{checkAns(e,1)}}>{question.option4}</p>
                         </div>
                     </div>
-                        
+                    <ul>
+                      <li>
+                        <NavLink to={"/Uniti_page_11"} className='submit'  >submit</NavLink>
+                      </li>
+                  </ul>
                 </div>
             </div>
          )}
