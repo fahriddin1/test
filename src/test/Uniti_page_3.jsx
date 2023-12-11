@@ -96,7 +96,7 @@ const Uniti_page_3 = () => {
                     </div>
                     <ul>
                       <li>
-                        <NavLink to={"/Uniti_page_4"} className='submit'  >submit</NavLink>
+                        <NavLink to={"/Uniti_page_4"} className='submits'  >submit</NavLink>
                       </li>
                   </ul>
 
